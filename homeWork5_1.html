@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  function isPolindrom(word) {
+    var wordReverse = word.split('').reverse().join('');
+    if (wordReverse == word) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+var text = prompt("enter your word",);
+alert("word is polindrom" +" " + isPolindrom(text));
+</script>
+</body>
+</html>

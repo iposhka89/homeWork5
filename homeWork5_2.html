@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script>
+
+  function isPolindrom(word1,word2) {
+    var word1Sort = word1.split('').sort().join(''),
+    	word2Sort = word2.split('').sort().join('');
+    if (word1Sort.length>=word2Sort.length) {
+      if(word1Sort.indexOf(word2Sort) == -1){return false;}
+      	else {return true;}
+    }else{
+    	if(word2Sort.indexOf(word1Sort) == -1){return false;}
+    	else {return true;}
+    }
+  }
+var text1 = prompt("enter your word1",),
+	text2 = prompt("enter your word2",);
+alert("word is anagram" +" " + isPolindrom(text1,text2));
+</script>
+</body>
+</html>
